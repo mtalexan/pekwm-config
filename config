@@ -1,0 +1,56 @@
+INCLUDE = "$_PEKWM_ETC_PATH/config_system"
+
+Files {
+    Keys = "~/.pekwm/keys"
+    Mouse = "~/.pekwm/mouse"
+    Menu = "~/.pekwm/menu"
+    Start = "~/.pekwm/start"
+    AutoProps = "~/.pekwm/autoproperties"
+    Icons = "~/.pekwm/icons/"
+
+    Theme = "~/.pekwm/themes/dust"
+}
+
+MoveResize {
+    EdgeAttract = "10"
+    EdgeResist = "10"
+    WindowAttract = "5"
+    WindowResist = "5"
+    OpaqueMove = "True"
+    OpaqueResize = "True"
+}
+
+Screen {
+    Workspaces = "10"
+    WorkspacesPerRow = "3"
+    WorkspaceNames = "1;2;3;4;5;6;7;8;9;0"
+
+    ShowFrameList = "True"
+    ShowStatusWindow = "True"
+    ShowWorkspaceIndicator = "500"
+    PlaceNew = "True"
+    FocusNew = "True"
+
+    FullscreenAbove = "False"
+    FullscreenDetect = "True"
+    HonourRandr = "True"
+    HonorAspectRatio = "True"
+
+    Placement {
+        Model = "CenteredOnParent Smart MouseNotUnder"
+        Smart {
+              Row = "True"
+              TopToBottom = "True"
+              LeftToRight = "True"
+        }
+    }
+}
+
+Menu {
+     DisplayIcons = "True"
+
+     Icons = "DEFAULT" {
+        Minimum = "16x16"
+        Maximum = "16x16"
+    }
+}
